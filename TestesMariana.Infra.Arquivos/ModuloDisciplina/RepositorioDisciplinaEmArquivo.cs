@@ -7,9 +7,9 @@ using TestesMariana.Infra.Arquivos.Compartilhado;
 
 namespace TestesMariana.Infra.Arquivos.ModuloDisciplina
 {
-    public class RepositorioDisciplinaEmBancoDeDados : RepositorioEmArquivoBase<Disciplina>
+    public class RepositorioDisciplinaEmAquivos : RepositorioEmArquivoBase<Disciplina>
     {
-        public RepositorioDisciplinaEmBancoDeDados(DataContext contextoDados) : base(contextoDados)
+        public RepositorioDisciplinaEmAquivos(DataContext contextoDados) : base(contextoDados)
         {
             if (dataContext.Disciplinas.Count > 0)
                 contador = dataContext.Disciplinas.Max(x => x.Numero);

@@ -19,8 +19,8 @@ namespace TestesMariana.WinApp.ModuloTeste
     {
         private Teste _teste;
         private RepositorioTesteEmArquivo _repositorioTeste;
-        private RepositorioDisciplinaEmBancoDeDados _repositorioDisciplina;
-        private RepositorioMateriaEmBandoDeDacos _repositorioMateria;
+        private RepositorioDiscplinaEmBancoDeDados _repositorioDisciplina;
+        private RepositorioMateriaEmBancoDeDacos _repositorioMateria;
         private RepositorioQuestaoEmBancoDeDados _repositorioQuestao;
  
 
@@ -41,7 +41,7 @@ namespace TestesMariana.WinApp.ModuloTeste
                 textBoxQtdeQuestoes.Text = _teste.QtdeQuestoes.ToString();
             }
         }
-        public TelaCadastroTesteForm(RepositorioTesteEmArquivo rt, RepositorioDisciplinaEmBancoDeDados rd, RepositorioMateriaEmBandoDeDacos rm, RepositorioQuestaoEmBancoDeDados rq)
+        public TelaCadastroTesteForm(RepositorioTesteEmArquivo rt, RepositorioDiscplinaEmBancoDeDados rd, RepositorioMateriaEmBancoDeDacos rm, RepositorioQuestaoEmBancoDeDados rq)
         {
             InitializeComponent();
             this._repositorioTeste = rt;

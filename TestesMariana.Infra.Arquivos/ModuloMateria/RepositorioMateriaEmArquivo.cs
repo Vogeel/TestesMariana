@@ -7,9 +7,9 @@ using TestesMariana.Infra.Arquivos.Compartilhado;
 
 namespace TestesMariana.Infra.Arquivos.ModuloMateria
 {
-    public class RepositorioMateriaEmBandoDeDacos : RepositorioEmArquivoBase<Materia>
+    public class RepositorioMateriaEmAquivo : RepositorioEmArquivoBase<Materia>
     {
-        public RepositorioMateriaEmBandoDeDacos(DataContext contextoDados) : base(contextoDados)
+        public RepositorioMateriaEmAquivo(DataContext contextoDados) : base(contextoDados)
         {
             if (dataContext.Materias.Count > 0)
                 contador = dataContext.Materias.Max(x => x.Numero);

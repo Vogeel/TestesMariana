@@ -11,7 +11,7 @@ namespace TestesMariana.Infra.BancoDeDados
     public class RepositorioQuestaoEmBancoDeDados
     {
         private const string enderecoBanco =
-            "Data Source=MARCOS;Initial Catalog=mariana_db;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            @"Data Source=(LocalDB)\MSSqlLocalDb;Initial Catalog=MarianaTestsDb;Integrated Security=True;Pooling=False";
 
         private const string sqlInserirQuestao =
             @"INSERT INTO [TB_QUESTAO]

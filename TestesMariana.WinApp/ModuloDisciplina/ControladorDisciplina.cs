@@ -13,7 +13,7 @@ namespace TestesMariana.WinApp.ModuloDisciplina
     public class ControladorDisciplina : ControladorBase
     {
         //private RepositorioDisciplinaEmArquivo _repositorioDisciplina;
-        private RepositorioMateriaEmBandoDeDacos _repositorioMateria;
+        private RepositorioMateriaEmBancoDeDacos _repositorioMateria;
 
         private RepositorioDiscplinaEmBancoDeDados _repositorioDisciplinaBD;
 
@@ -68,7 +68,7 @@ namespace TestesMariana.WinApp.ModuloDisciplina
                 TelaPrincipalForm.Instancia!.AtualizarRodape("Seleciona uma disciplina!");
                 return;
             }
-            List<Materia> materias = _repositorioMateria.ObterRegistros();
+            List<Materia> materias = _repositorioMateria.SelecionarTodos();
             foreach (var item in materias)
             {
                 if (item.Disciplina == disciplinaSelecionada)

@@ -16,9 +16,8 @@ namespace TestesMariana.WinApp.ModuloQuestao
     public class ControladorQuestao : ControladorBase
     {
         private RepositorioQuestaoEmBancoDeDados _repositorioQuestao;
-        private RepositorioMateriaEmBandoDeDacos _repositorioMateria;
-        private RepositorioDisciplinaEmBancoDeDados _repositorioDisciplina;
-
+        private RepositorioMateriaEmBancoDeDacos _repositorioMateria;
+        private RepositorioDiscplinaEmBancoDeDados _repositorioDisciplina;
         private TabelaQuestaoControl _tabelaQuestao;
 
 
@@ -46,7 +45,7 @@ namespace TestesMariana.WinApp.ModuloQuestao
 
         public override void Editar()
         {
-            List<Disciplina> disciplinas = _repositorioDisciplina.ObterRegistros();
+            List<Disciplina> disciplinas = _repositorioDisciplina.SelecionarTodos();
             TelaCadastroQuestaoForm tela = new(_repositorioDisciplina, _repositorioMateria);
 
             Questao questaoSelecionada = ObtemQuestaoSelecionada();

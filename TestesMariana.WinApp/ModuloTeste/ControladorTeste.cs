@@ -14,8 +14,8 @@ namespace TestesMariana.WinApp.ModuloTeste
     public class ControladorTeste : ControladorBase
     {
         private RepositorioTesteEmArquivo _repositorioTeste;
-        private RepositorioDisciplinaEmBancoDeDados _repositorioDisciplina;
-        private RepositorioMateriaEmBandoDeDacos _repositorioMateria;
+        private RepositorioDiscplinaEmBancoDeDados _repositorioDisciplina;
+        private RepositorioMateriaEmBancoDeDacos _repositorioMateria;
         private RepositorioQuestaoEmBancoDeDados _repositorioQuestao;
 
         private TabelaTesteControl _tabelaTeste;
